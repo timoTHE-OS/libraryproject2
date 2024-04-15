@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: white;
-  background-image: url(/librarybot.jpeg);
+  background-image: url(librarybot.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: fixed;
