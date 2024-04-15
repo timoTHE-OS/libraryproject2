@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>MALhub e-library🤖</h1>
+      </div>
+      <div class="welcometext">
+        <h1 class="hello">Hello, <span> Avid Reader📚</span></h1>
+        <h1 class="hello2">
+          Let's get you a book from our library, based on your taste
+        </h1>
+      </div>
+      <div class="book-carousel">
+        <div class="carousel-container">
+          <div class="book-card">
+            <img src="/who do you think.jpg" alt="Book 1" />
+            <h3>Who Do You Think You Are?</h3>
+          </div>
+          <div class="book-card">
+            <img src="/resisting happiness.jpg" alt="Book 1" />
+            <h3>Resisting Happiness</h3>
+          </div>
+          <div class="book-card">
+            <img src="/you are  a badass.jpg" alt="Book 1" />
+            <h3>You Are A Badass</h3>
+          </div>
+          <div class="book-card">
+            <img src="/calm the fuck.jpg" alt="Book 2" />
+            <h3>Calm The F*ck Down</h3>
+          </div>
+          <div class="book-card">
+            <img src="/getting more of what you want.jpg" alt="Book 3" />
+            <h3>Getting More of What You Want</h3>
+          </div>
+          <div class="book-card">
+            <img src="/gifts of imperfection.jpg" alt="Book 4" />
+            <h3>Gifts of Imperfection</h3>
+          </div>
+        </div>
+      </div>
+
+      <div id="quiz">
+        <div id="question1" class="question">
+          <p>What do you enjoy doing in your free time?</p>
+          <select id="q1">
+            <option value="1">Reading</option>
+            <option value="2">Outdoor activities</option>
+            <option value="3">Watching movies/TV shows</option>
+            <option value="4">Socializing with friends</option>
+          </select>
+        </div>
+        <div id="question2" class="question">
+          <p>How do you handle challenges?</p>
+          <select id="q2">
+            <option value="1">With logic and reasoning</option>
+            <option value="2">By taking risks</option>
+            <option value="3">By seeking advice from others</option>
+            <option value="4">By staying calm and patient</option>
+          </select>
+        </div>
+        <div id="question3" class="question">
+          <p>What type of stories do you enjoy the most?</p>
+          <select id="q3">
+            <option value="1">Fantasy and adventure</option>
+            <option value="2">Mystery and thriller</option>
+            <option value="3">Romance and drama</option>
+            <option value="4">Non-fiction and self-help</option>
+          </select>
+        </div>
+      </div>
+      <button onclick="calculateRecommendation()" class="btn">
+        Get Recommendations From No 1 Best Selling Authors
+      </button>
+
+      <div id="result" class="result" style="display: none">
+        <h2>Expert Recommended Books</h2>
+        <div id="bookList"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
